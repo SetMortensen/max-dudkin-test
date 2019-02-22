@@ -1,0 +1,35 @@
+{
+  "photo": "/images/artyom-timchenko-full.jpg",
+  "education": [
+    {
+      "name": "Donbass State Machine-building  Academy",
+      "address": "m. Kramatorsk",
+      "years": "2009 - 2014"
+    },
+    {
+      "name": "School, 10",
+      "address": "m. Slovyansk",
+      "years": "1999 - 2009"
+    }
+  ],
+  "experience": [
+    {
+      "name": "3put",
+      "position": "Full-stack developer",
+      "address": "Moscow city",
+      "period": "08.2018 - 01.2019"
+    },
+    {
+      "name": "Max Perchunov SEO-agency",
+      "position": "Full-stack developer",
+      "address": "g. Tula",
+      "period": "01.2016 - 07.2018"
+    },
+    {
+      "name": "Digital Agency AlterEgo",
+      "position": "content-manager",
+      "address": "m. Kramatorsk",
+      "period": "08.2013 - 02.2014"
+    }
+  ]
+}

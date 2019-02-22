@@ -1,0 +1,16 @@
+.overview {
+  position: relative;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+
+  .loading {
+    display: block;
+    margin: 0 auto;
+  }
+}

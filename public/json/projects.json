@@ -1,0 +1,52 @@
+{
+  "projects": [
+    {
+      "name": "project_name_1",
+      "description": "description of project 1",
+      "image": "/images/project1.jpg",
+      "link": "http://site.com"
+    },
+    {
+      "name": "project_name_2",
+      "description": "description of project 2",
+      "image": "/images/project2.jpg",
+      "link": "http://site.com"
+    },
+    {
+      "name": "project_name_3",
+      "description": "description of project 3",
+      "image": "/images/project3.jpg",
+      "link": "http://site.com"
+    },
+    {
+      "name": "project_name_4",
+      "description": "description of project 4",
+      "image": "/images/project4.jpg",
+      "link": "http://site.com"
+    },
+    {
+      "name": "project_name_5",
+      "description": "description of project 5",
+      "image": "/images/project5.jpg",
+      "link": "http://site.com"
+    },
+    {
+      "name": "project_name_6",
+      "description": "description of project 6",
+      "image": "/images/project6.jpg",
+      "link": "http://site.com"
+    },
+    {
+      "name": "project_name_7",
+      "description": "description of project 7",
+      "image": "/images/project7.jpg",
+      "link": "http://site.com"
+    },
+    {
+      "name": "project_name_8",
+      "description": "description of project 8",
+      "image": "/images/project8.jpg",
+      "link": "http://site.com"
+    }
+  ]
+}

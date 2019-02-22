@@ -1,0 +1,35 @@
+.header{
+  background: #4a76a8;
+  height: 42px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #4872a3;
+  color: white;
+
+  .container{
+    max-width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    padding-left: 20px;
+  }
+  h1{
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .user-short-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .avatar{
+      margin-left: 20px;
+    }
+  }
+
+}

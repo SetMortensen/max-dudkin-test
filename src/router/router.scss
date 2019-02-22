@@ -1,0 +1,112 @@
+.content {
+  margin-top: 15px;
+
+  .container{
+    max-width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  aside{
+    flex: 0 0 20%;
+    padding-right: 20px;
+    box-sizing: border-box;
+
+    a{
+      color: #285473;
+      text-decoration: none;
+      max-width: 100%;
+      height: 28px;
+      line-height: 27px;
+      font-size: 12.5px;
+      display: block;
+      padding-left: 20px;
+      font-weight: 400;
+    }
+    a:visited{
+      color: #285473;
+      text-decoration: none;
+    }
+    a:hover{
+      background: #e1e5eb;
+      border-radius: 2px;
+    }
+  }
+  main{
+    flex: 0 0 80%;
+
+    .overview,.projects,.contacts {
+      position: relative;
+      background: #fff;
+      border-radius: 4px;
+      box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+      padding: 15px 20px;
+      box-sizing: border-box;
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      .projects-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .projects-list li {
+        padding: 0 15px !important;
+        flex: 0 0 23%;
+        box-sizing: border-box;
+        margin: 10px 5px;
+        border-radius: 4px;
+        box-shadow: 0 0 1px 1px #d7d8db, 0 0 1px 1px #e3e4e8;
+      }
+      .projects-list img {
+        width: 100%;
+      }
+      .loading {
+        display: block;
+        margin: 0 auto;
+      }
+      .overview__photo {
+        width: 200px;
+        margin-right: 20px;
+      }
+      .overview__content,.contacts__content,.projects__content {
+        flex: 0 1 100%;
+      }
+      h2:not(:first-of-type) {
+        border-top: 1px solid #e7e8ec;
+      }
+      h2 {
+        font-size: 19px;
+        line-height: 25px;
+        font-weight: 400;
+        margin: -1px 0 -1px -1px;
+      }
+      ul{
+        list-style-type: none;
+        padding: 0;
+        font-size: 14px;
+
+        li {
+          padding: 2px 0;
+        }
+        .name {
+          display: inline-block;
+          width: 100px;
+          color: #828282;
+        }
+        a,a:visited{
+          color: #2a5885;
+          text-decoration: none;
+        }
+        a:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
