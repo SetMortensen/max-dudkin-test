@@ -12,6 +12,14 @@ function* loadContent(fileName){
     yield put({type:'CONTENT_LOADED',payload:{...data,fileName}});
 }
 
+function* submitForm(data){
+    const response = yield fetch('/feedback.php',{
+        method:"POST",
+        body:data
+    });
+    yield put({type:'FEEDBACKFORM_SUBMITED',payload:response});
+}
+
 function* watchLoadContent(){
     while(true){
         const {payload} = yield take('LOAD_CONTENT');
@@ -19,10 +27,18 @@ function* watchLoadContent(){
     }
 }
 
+function* watchFeedbackFormSubmit(){
+    while(true){
+        const {payload} = yield take('SUBMIT_FEEDBACK_FORM');
+        yield submitForm(payload);
+    }
+}
+
 export default function* rootSaga(){
     yield all(
         [
-            fork(watchLoadContent)
+            fork(watchLoadContent),
+            fork(watchFeedbackFormSubmit)
         ]
     );
 }

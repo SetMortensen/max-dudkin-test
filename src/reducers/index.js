@@ -14,6 +14,9 @@ const reducer = (state = initialState, action) => {
         case "FETCHING":
             newState.isFetching = true;
             break;
+        case "FEEDBACKFORM_SUBMITED":
+            newState.feedback = true;
+            break;
         default:
             break;
     }
