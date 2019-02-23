@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { connect } from "react-redux";
 import loading from '../images/loading.gif';
+import FeedbackForm from './FeedbackForm'
 
 class Contacts extends Component{
     componentWillMount() {
@@ -59,6 +60,9 @@ class Contacts extends Component{
                                     ))
                             }
                         </ul>
+                        <h2>Wanna give me money?</h2>
+                        {!this.props.state.feedback&&<FeedbackForm/>}
+                        {!!this.props.state.feedback&&<p>You have already send me your feedback data!</p>}
                     </div>
                 )}
             </div>
