@@ -19,6 +19,9 @@ class FeedbackForm extends Component{
 
     onInputChange(e){
         this.setState({[e.target.name] : e.target.value});
+        if (e.target.value === '') {
+            e.target.nextElementSibling.style.opacity = '1';
+        }
     }
 
     onInputBlur(e){
